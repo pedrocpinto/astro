@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	GaussianGravitationalConstant         = "gaussian_gravitational_constant"
+	GaussianGravitational                 = "gaussian_gravitational_constant"
 	LighYear                              = "light_year"
 	MeanRatioOfTheTTSecondToTheTCGSecond  = "mean_ratio_of_the_tt_second_to_the_tcg_second"
 	MeanRatioOfTheTCBSecondToTheTDBSecond = "mean_ratio_of_the_tcb_second_to_the_tdb_second"
@@ -22,9 +22,24 @@ type AstroConstant struct {
 
 var astronomicalConstants = map[string]AstroConstant{
 	LighYear: {
-		name: "Light Year",
+		name:  "Light Year",
 		value: "9.46073044725808 * 10^15",
 		units: "meters",
+	},
+	GaussianGravitational: {
+		name: "Gaussian Gravitational",
+		value: "0.01720209895",
+		units: "rad/day",
+	},
+	SpeedOfLight: {
+		name: "Speed of light",
+		value: "299792458",
+		units: "meters per second",
+	},
+	Parsec: {
+		name: "Parsec",
+		value: "3.26",
+		units: "light years",
 	},
 }
 
