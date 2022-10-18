@@ -1,6 +1,6 @@
 # astro
 
-A package to help you handling **astronomical constants**.
+A package to help you handle **astronomical constants**.
 Still a work in progress. :construction_worker:
 
 
