@@ -3,6 +3,9 @@
 A package to help you handling **astronomical constants**.
 Still a work in progress. :construction_worker:
 
+## Makefile
+
+Use the command `make help` to check the available commands 
 
 ## Examples
 
