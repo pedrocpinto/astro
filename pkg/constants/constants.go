@@ -27,26 +27,30 @@ var astronomicalConstants = map[string]AstroConstant{
 		units: "meters",
 	},
 	GaussianGravitational: {
-		name: "Gaussian Gravitational",
+		name:  "Gaussian Gravitational",
 		value: "0.01720209895",
 		units: "rad/day",
 	},
 	SpeedOfLight: {
-		name: "Speed of light",
+		name:  "Speed of light",
 		value: "299792458",
 		units: "meters per second",
 	},
 	Parsec: {
-		name: "Parsec",
+		name:  "Parsec",
 		value: "3.26",
 		units: "light years",
 	},
 }
 
-func Get(constant string) (*AstroConstant, error) {
+func GetConstant(constant string) (*AstroConstant, error) {
 	if val, ok := astronomicalConstants[constant]; ok {
 		return &val, nil
 	}
 
 	return nil, errors.New(fmt.Sprintf("Sorry, info for constant '%s' is not configured.", constant))
+}
+
+func GetAllConstants() (map[string]AstroConstant) {
+	return astronomicalConstants
 }

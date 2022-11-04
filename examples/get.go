@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	astroConst, err := constants.Get(constants.LighYear)
+	astroConst, err := constants.GetConstant(constants.LighYear)
 	if err != nil {
 		fmt.Println(err.Error())
 	}

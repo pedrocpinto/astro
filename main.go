@@ -11,5 +11,5 @@ func PrintSomething() {
 }
 
 func GetAstroConstant(constName string) (*constants.AstroConstant, error) {
-	return constants.Get(constName)
+	return constants.GetConstant(constName)
 }

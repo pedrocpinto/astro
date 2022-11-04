@@ -22,7 +22,7 @@ func TestGet(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		constant, err := Get(tc.input)
+		constant, err := GetConstant(tc.input)
 		assert.Equal(t, tc.expectedName, constant.name)
 		assert.Nil(t, err)
 	}
